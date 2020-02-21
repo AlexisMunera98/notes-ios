@@ -12,6 +12,8 @@
 		9C66587723FF49DF00E675A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C66587523FF49DF00E675A3 /* Main.storyboard */; };
 		9C66587923FF49DF00E675A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C66587823FF49DF00E675A3 /* Assets.xcassets */; };
 		9C66587C23FF49DF00E675A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C66587A23FF49DF00E675A3 /* LaunchScreen.storyboard */; };
+		9C66588423FF5B6100E675A3 /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C66588323FF5B6100E675A3 /* NotesTableViewController.swift */; };
+		9C66588623FF665C00E675A3 /* EditNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C66588523FF665C00E675A3 /* EditNoteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		9C66587823FF49DF00E675A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C66587B23FF49DF00E675A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C66587D23FF49DF00E675A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C66588323FF5B6100E675A3 /* NotesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
+		9C66588523FF665C00E675A3 /* EditNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditNoteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				9C66587123FF49DF00E675A3 /* AppDelegate.swift */,
 				9C66587323FF49DF00E675A3 /* ViewController.swift */,
 				9C66587523FF49DF00E675A3 /* Main.storyboard */,
+				9C66588323FF5B6100E675A3 /* NotesTableViewController.swift */,
+				9C66588523FF665C00E675A3 /* EditNoteViewController.swift */,
 				9C66587823FF49DF00E675A3 /* Assets.xcassets */,
 				9C66587A23FF49DF00E675A3 /* LaunchScreen.storyboard */,
 				9C66587D23FF49DF00E675A3 /* Info.plist */,
@@ -138,6 +144,8 @@
 			files = (
 				9C66587423FF49DF00E675A3 /* ViewController.swift in Sources */,
 				9C66587223FF49DF00E675A3 /* AppDelegate.swift in Sources */,
+				9C66588623FF665C00E675A3 /* EditNoteViewController.swift in Sources */,
+				9C66588423FF5B6100E675A3 /* NotesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
