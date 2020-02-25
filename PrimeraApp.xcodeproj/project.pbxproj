@@ -14,6 +14,8 @@
 		9C66587C23FF49DF00E675A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C66587A23FF49DF00E675A3 /* LaunchScreen.storyboard */; };
 		9C66588423FF5B6100E675A3 /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C66588323FF5B6100E675A3 /* NotesTableViewController.swift */; };
 		9C66588623FF665C00E675A3 /* EditNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C66588523FF665C00E675A3 /* EditNoteViewController.swift */; };
+		9C7433D02404943600B25BAC /* NotesDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7433CF2404943600B25BAC /* NotesDelegate.swift */; };
+		9C7433D32404986800B25BAC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9C7433D12404986800B25BAC /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		9C66587D23FF49DF00E675A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C66588323FF5B6100E675A3 /* NotesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
 		9C66588523FF665C00E675A3 /* EditNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditNoteViewController.swift; sourceTree = "<group>"; };
+		9C7433CF2404943600B25BAC /* NotesDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesDelegate.swift; sourceTree = "<group>"; };
+		9C7433D22404986800B25BAC /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +62,26 @@
 		9C66587023FF49DF00E675A3 /* PrimeraApp */ = {
 			isa = PBXGroup;
 			children = (
+				9C7433D4240498C000B25BAC /* views */,
+				9C7433D12404986800B25BAC /* Model.xcdatamodeld */,
 				9C66587123FF49DF00E675A3 /* AppDelegate.swift */,
 				9C66587323FF49DF00E675A3 /* ViewController.swift */,
 				9C66587523FF49DF00E675A3 /* Main.storyboard */,
-				9C66588323FF5B6100E675A3 /* NotesTableViewController.swift */,
-				9C66588523FF665C00E675A3 /* EditNoteViewController.swift */,
+				9C7433CF2404943600B25BAC /* NotesDelegate.swift */,
 				9C66587823FF49DF00E675A3 /* Assets.xcassets */,
 				9C66587A23FF49DF00E675A3 /* LaunchScreen.storyboard */,
 				9C66587D23FF49DF00E675A3 /* Info.plist */,
 			);
 			path = PrimeraApp;
+			sourceTree = "<group>";
+		};
+		9C7433D4240498C000B25BAC /* views */ = {
+			isa = PBXGroup;
+			children = (
+				9C66588323FF5B6100E675A3 /* NotesTableViewController.swift */,
+				9C66588523FF665C00E675A3 /* EditNoteViewController.swift */,
+			);
+			name = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,10 +156,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C7433D02404943600B25BAC /* NotesDelegate.swift in Sources */,
 				9C66587423FF49DF00E675A3 /* ViewController.swift in Sources */,
 				9C66587223FF49DF00E675A3 /* AppDelegate.swift in Sources */,
 				9C66588623FF665C00E675A3 /* EditNoteViewController.swift in Sources */,
 				9C66588423FF5B6100E675A3 /* NotesTableViewController.swift in Sources */,
+				9C7433D32404986800B25BAC /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,8 +323,23 @@
 				9C66588223FF49DF00E675A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9C7433D12404986800B25BAC /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9C7433D22404986800B25BAC /* Model.xcdatamodel */,
+			);
+			currentVersion = 9C7433D22404986800B25BAC /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = ../Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9C66586623FF49DF00E675A3 /* Project object */;
 }

@@ -10,25 +10,43 @@ import UIKit
 
 class EditNoteViewController: UIViewController {
     
-    var note: String?
-
+    var note: Note?
+    var delegate: NotesDelegate?
+    
+    
     @IBOutlet weak var textView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        textView.text = note
+        if (note != nil){
+            textView.text = note?.title
+        }
         // Do any additional setup after loading the view.
     }
     
     @IBAction func cancelEdition(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func savePressed(_ sender: Any) {
+        let note_text = textView.text!
+        
+        if (delegate != nil){
+            if (note != nil){
+                delegate?.onNoteUpdated(noteId: note!.objectID, noteText: note_text)
+            }else{
+                delegate?.onNoteAdded(note: note_text)
+            }
+            
+        }
+        
+        dismiss(animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation
